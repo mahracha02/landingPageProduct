@@ -1,0 +1,35 @@
+.circle {
+  position: fixed;
+  bottom: 20px; /* Position du bas */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366; /* Vert pour WhatsApp */
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.circle.whatsapp {
+  right: 20px; /* Aligné à droite */
+  background-color: #25D366;
+}
+
+.circle.scroll-up {
+  right: 90px; /* Un peu décalé à gauche */
+  background-color: #000;
+}
+
+.circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.circle i {
+  font-size: 24px;
+}
